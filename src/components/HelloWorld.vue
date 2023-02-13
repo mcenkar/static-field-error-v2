@@ -35,6 +35,8 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component
 export default class HelloWorld extends Vue {
+  public static varOne = 6;
+  public static varTwo = HelloWorld.varOne / 2;
   @Prop() private msg!: string;
 }
 </script>
